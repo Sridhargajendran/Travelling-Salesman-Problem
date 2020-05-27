@@ -1,5 +1,5 @@
 let cities = [];
-var totalcities = 6;
+var totalcities = 10;
 let minDistance;
 var bestEver;
 let div;
@@ -7,7 +7,7 @@ let div;
 function setup() {
   createCanvas(600, 400);
   div = createDiv('Best Distance :' minDistance);
-  div.style('font-size', '18pt');
+  div.style("font-size", "24pt");
   for (var i = 0; i < totalcities; i++) {
     var v = createVector(random(width), random(height));
     cities[i] = v;
