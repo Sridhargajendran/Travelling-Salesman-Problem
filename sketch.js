@@ -2,10 +2,11 @@ let cities = [];
 var totalcities = 6;
 let minDistance;
 var bestEver;
+let div;
 
 function setup() {
   createCanvas(600, 400);
-
+  div = createDiv(minDistance);
   for (var i = 0; i < totalcities; i++) {
     var v = createVector(random(width), random(height));
     cities[i] = v;
@@ -51,6 +52,8 @@ function draw() {
     console.log(minDistance);
     bestEver = cities.slice();
   }
+  
+  div.html(minDistance);
 }
 
 function swap(a, i, j) {
